@@ -3,8 +3,7 @@ return {
         "folke/tokyonight.nvim",
         config = function()
             require("tokyonight").setup({
-                style = "storm",
-                transparent = true,
+                style = "night",
                 terminal_colors = true,
                 styles = {
                     comments = {italic = false},

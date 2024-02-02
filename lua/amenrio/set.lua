@@ -1,3 +1,5 @@
+-- vim.g.mapleader = " "
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -30,7 +32,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
 
-vim.g.mapleader = " "
 
 -- vim.cmd [[ colorscheme catppuccin ]]
 -- vim.cmd [[ set background=dark ]]
