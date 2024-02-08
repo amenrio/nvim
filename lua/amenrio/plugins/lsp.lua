@@ -8,10 +8,17 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "lua_ls", 
-                "pylsp",
+                "lua_ls",
+                "pyright",
+                "jsonls",
+                "bashls",
+            },
+            handlers = {
+                function (server_name) -- default handelr
+                    require("lspconfig")[server_name].setup {}
+                end,
             },
         })
     end,
-    
+
 }
