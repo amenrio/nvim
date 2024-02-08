@@ -56,4 +56,28 @@ return {
             },
         }
     },
+    {
+        "rebelot/kanagawa.nvim",
+        config = function()
+            require("kanagawa").setup({
+                theme = "dragon",
+            })
+        end,
+    },
+    {
+        "navarasu/onedark.nvim",
+        config = function()
+            require("onedark").setup {
+                style = "darker",
+            }
+            require("onedark").load()
+        end,
+    },
+    {
+        "tiagovla/tokyodark.nvim",
+        config = function()
+            require("tokyodark").setup()
+        end,
+    },
+
 }
