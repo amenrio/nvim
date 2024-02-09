@@ -3,7 +3,7 @@ return {
         "folke/tokyonight.nvim",
         config = function()
             require("tokyonight").setup({
-                style = "night",
+                style = "storm",
                 terminal_colors = true,
                 styles = {
                     comments = {italic = false},
@@ -73,11 +73,4 @@ return {
             require("onedark").load()
         end,
     },
-    {
-        "tiagovla/tokyodark.nvim",
-        config = function()
-            require("tokyodark").setup()
-        end,
-    },
-
 }

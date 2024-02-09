@@ -1,5 +1,3 @@
--- vim.g.mapleader = " "
-
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -50,21 +48,3 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end, opts)
     end,
 })
--- vim.cmd [[ colorscheme catppuccin ]]
--- vim.cmd [[ set background=dark ]]
-
---[[
-vim.g.clipboard = {
-	name = "myClipboard",
-	copy = {
-	    ["+"] = {"tmux", "load-buffer", "-"},
-	    ["*"] = {"tmux", "load-buffer", "-"},
-	},
-	paste = {
-	    ["+"] = {"tmux", "save-buffer", "-"},
-	    ["*"] = {"tmux", "save-buffer", "-"},
-	},
-	cache_enabled=true,
-}
-]]--
-
