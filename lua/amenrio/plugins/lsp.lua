@@ -12,6 +12,11 @@ return {
                 "pyright",
                 "jsonls",
                 "bashls",
+                python = {
+                    "pyright",
+                    "flake8",
+                    "black",
+                },
             },
             handlers = {
                 function (server_name) -- default handelr
@@ -28,6 +33,6 @@ return {
                 },
             },
         }
-    end,
 
+    end,
 }
