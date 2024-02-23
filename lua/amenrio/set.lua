@@ -28,7 +28,11 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.cursorline = true
+
 vim.opt.colorcolumn = "100"
+vim.opt.textwidth = 100
+
 
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)
