@@ -49,4 +49,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end,
 })
 
-vim.g.python3_host_prog = "~/nvim_venv/bin/python"
+vim.g.python3_host_prog = "~/.config/nvim/venv/bin/python"
