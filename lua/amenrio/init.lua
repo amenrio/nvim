@@ -2,5 +2,5 @@ require("amenrio.remap")
 require("amenrio.set")
 require("amenrio.lazy")
 
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd[[colorscheme catppuccin-mocha]]
 
