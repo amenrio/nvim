@@ -1,19 +1,19 @@
 return{
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        opts = function(_, opts)
-            if type(opts.ensure_installed) == "table" then
-                vim.list_extend(opts.ensure_installed, {
-                    "lua",
-                    "ninja",
-                    "python",
-                    "rst",
-                    "toml",
-                    "bash",
-                    "json",
-                    "vim",
-                    "vimdoc",
-                })
-            end
-        end,
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+        require("nvim-treesitter.configs").setup({
+            ensure_installed = {
+                "lua",
+                "ninja",
+                "python",
+                "rst",
+                "toml",
+                "bash",
+                "json",
+                "vim",
+                "vimdoc",
+            },
+        })
+    end,
 }

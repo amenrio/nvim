@@ -1,4 +1,4 @@
-return{ 
+return{
     'nvim-lualine/lualine.nvim',
     dependencies = {'nvim-tree/nvim-web-devicons'},
     config = function()
@@ -8,7 +8,7 @@ return{
                 theme = 'catppuccin-macchiato',
                 component_separators = { left = '', right = ''},
                 section_separators = { left = '', right = ''},
-                disabled_filetypes = {  
+                disabled_filetypes = {
                     statusline = {},
                     winbar = {},
                 },
