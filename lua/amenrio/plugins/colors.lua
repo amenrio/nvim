@@ -1,5 +1,12 @@
 return {
     {
+        "rose-pine/neovim",
+        name = "rose-pine",
+    },
+    {
+        'rebelot/kanagawa.nvim'
+    },
+    {
         "folke/tokyonight.nvim",
         lazy = false,
     },
@@ -28,7 +35,7 @@ return {
                     treesitter_context = true,
                 }
             })
-            -- vim.cmd.colorscheme("catppuccin-macchiato")
+            -- vim.cmd.colorscheme("catppuccin-mocha")
 
             -- Temporary solution
            -- for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do

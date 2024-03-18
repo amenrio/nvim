@@ -33,7 +33,6 @@ vim.opt.cursorline = true
 vim.opt.colorcolumn = "100"
 vim.opt.textwidth = 100
 
-
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)
         local opts = {buffer = ev.buf}
