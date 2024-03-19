@@ -4,6 +4,12 @@ return {
         name = "rose-pine",
     },
     {
+        'EdenEast/nightfox.nvim',
+        config = function()
+            vim.cmd.colorscheme("duskfox")
+        end,
+    },
+    {
         'rebelot/kanagawa.nvim'
     },
     {
