@@ -7,6 +7,13 @@ return{
         end
     },
     {
+        'echasnovski/mini.surround',
+        version = false,
+        config = function ()
+            require('mini.surround').setup()
+        end
+    },
+    {
         'echasnovski/mini.starter',
         version = false,
         config = function ()
