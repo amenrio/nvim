@@ -1,8 +1,5 @@
 return{
     {
-        'tpope/vim-fugitive'
-    },
-    {
         "kdheepak/lazygit.nvim",
         cmd = {
             "LazyGit",
@@ -11,7 +8,6 @@ return{
             "LazyGitFilter",
             "LazyGitFilterCurrentFile",
         },
-
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
@@ -22,16 +18,14 @@ return{
             { "<leader>gF", "<cmd>LazyGitFilter<cr>", desc = "LazyGit filter"},
             { "<leader>gcF", "<cmd>LazyGitFilterCurrentFile<cr>", desc = "LazyGit filter current file" },
         },
-
         config = function()
-            vim.g.lazygit_floating_window_scaling_factor = 0.9
+            vim.g.lazygit_floating_window_scaling_factor = 1
         end,
-
     },
     {
-        'lewis6991/gitsigns.nvim',
+        "lewis6991/gitsigns.nvim",
         config = function()
             require('gitsigns').setup()
         end,
-    }
+    },
 }

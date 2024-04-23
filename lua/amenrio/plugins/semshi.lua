@@ -1,6 +1,6 @@
 return{
     "wookayin/semshi",
-    ft = "python",
+    ft = { "python" },
     init = function()
         vim.g["semshi#error_sign"] = false
         vim.g["semshi#simplify_markup"] = false
@@ -26,5 +26,5 @@ return{
             end,
         })
     end,
-    build = ":UpdateRemotePlugins",
+    build = ":UpdateRemotePlugin",
 }

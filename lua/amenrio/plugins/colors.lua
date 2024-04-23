@@ -1,52 +1,31 @@
-return {
+return{
     {
         "rose-pine/neovim",
         name = "rose-pine",
     },
     {
-        'EdenEast/nightfox.nvim',
-        config = function()
-            vim.cmd.colorscheme("duskfox")
+        "ellisonleao/gruvbox.nvim",
+        priority = 2000,
+        config = function ()
+            require('gruvbox').setup({
+                terminal_colors = false,
+            })
         end,
-    },
-    {
-        'rebelot/kanagawa.nvim'
     },
     {
         "folke/tokyonight.nvim",
         lazy = false,
-    },
-    {
-        "catppuccin/nvim",
+        priority = 1000,
         config = function ()
-            require("catppuccin").setup({
-                integrations = {
-                    cmp = true,
-                    gitsigns = true,
-                    harpoon = true,
-                    illuminate = true,
-                    indent_blankline = {
-                        enabled = false,
-                        scope_color = "sapphire",
-                        colored_indent_levels = false,
-                    },
-                    mason = true,
-                    native_lsp = { enabled = true },
-                    notify = true,
-                    nvimtree = true,
-                    neotree = true,
-                    symbols_outline = true,
-                    telescope = true,
-                    treesitter = true,
-                    treesitter_context = true,
+            require('lualine').setup({
+                options = {
+                    theme = 'tokyonight'
                 }
             })
-            -- vim.cmd.colorscheme("catppuccin-mocha")
-
-            -- Temporary solution
-           -- for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-           --     vim.api.nvim_set_hl(0, group, {})
-           -- end
-        end,
+            require('tokyonight').setup({
+                style = 'night',
+                transparent=true,
+            })
+        end
     },
 }
