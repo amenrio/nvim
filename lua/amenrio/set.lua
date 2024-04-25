@@ -26,12 +26,19 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
+vim.cmd[[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="BufferAlternateError", timeout=100})
+augroup END
+]]
+
 vim.opt.updatetime = 50
 
 vim.opt.cursorline = true
 
 vim.opt.colorcolumn = "100"
-vim.opt.textwidth = 100
+vim.opt.textwidth = 150
 
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)

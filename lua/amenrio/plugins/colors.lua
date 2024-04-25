@@ -19,12 +19,15 @@ return{
         config = function ()
             require('lualine').setup({
                 options = {
-                    theme = 'tokyonight'
-                }
+                    theme = 'tokyonight',
+                },
             })
             require('tokyonight').setup({
                 style = 'night',
                 transparent=true,
+                on_colors = function (colors)
+                    colors.bg_visual = '#438899'
+                end
             })
         end
     },
