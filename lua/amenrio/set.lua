@@ -29,7 +29,7 @@ vim.opt.isfname:append("@-@")
 vim.cmd[[
 augroup highlight_yank
 autocmd!
-au TextYankPost * silent! lua vim.highlight.on_yank({higroup="BufferAlternateError", timeout=100})
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="MatchParen", timeout=100})
 augroup END
 ]]
 
