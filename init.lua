@@ -1,4 +1,5 @@
 require("amenrio")
 
 -- Set colorscheme
-vim.cmd.colorscheme('tokyonight')
+-- vim.cmd.colorscheme("nordfox")
+vim.cmd.colorscheme("catppuccin")
