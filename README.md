@@ -1,8 +1,8 @@
-# rio.nvim/
+# nvim/
 
-<a href="https://dotfyle.com/amenrio/rionvim"><img src="https://dotfyle.com/amenrio/rionvim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/amenrio/rionvim"><img src="https://dotfyle.com/amenrio/rionvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/amenrio/rionvim"><img src="https://dotfyle.com/amenrio/rionvim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/amenrio/nvim"><img src="https://dotfyle.com/amenrio/nvim/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/amenrio/nvim"><img src="https://dotfyle.com/amenrio/nvim/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/amenrio/nvim"><img src="https://dotfyle.com/amenrio/nvim/badges/plugin-manager?style=flat" /></a>
 
 
 ## Install Instructions
@@ -12,14 +12,13 @@
 Clone the repository and install the plugins:
 
 ```sh
-git clone git@github.com:amenrio/rio.nvim ~/.config/amenrio/rio.nvim
-NVIM_APPNAME=amenrio/rio.nvim/ nvim --headless +"Lazy! sync" +qa
+git clone git@github.com:amenrio/nvim ~/.config/amenrio/nvim
 ```
 
 Open Neovim with this config:
 
 ```sh
-NVIM_APPNAME=amenrio/rio.nvim/ nvim
+NVIM_APPNAME=amenrio/nvim/ nvim
 ```
 
 ## Plugins
@@ -27,49 +26,62 @@ NVIM_APPNAME=amenrio/rio.nvim/ nvim
 ### colorscheme
 
 + [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
-+ [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
++ [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
+### comment
+
++ [danymat/neogen](https://dotfyle.com/plugins/danymat/neogen)
++ [echasnovski/mini.comment](https://dotfyle.com/plugins/echasnovski/mini.comment)
+### completion
+
++ [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+### editing-support
+
++ [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
 ### fuzzy-finder
 
 + [ibhagwan/fzf-lua](https://dotfyle.com/plugins/ibhagwan/fzf-lua)
-+ [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
 ### git
 
-+ [NeogitOrg/neogit](https://dotfyle.com/plugins/NeogitOrg/neogit)
-+ [sindrets/diffview.nvim](https://dotfyle.com/plugins/sindrets/diffview.nvim)
-### keybinding
++ [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
++ [kdheepak/lazygit.nvim](https://dotfyle.com/plugins/kdheepak/lazygit.nvim)
+### icon
 
-+ [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
++ [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
+### indent
+
++ [echasnovski/mini.indentscope](https://dotfyle.com/plugins/echasnovski/mini.indentscope)
 ### lsp
 
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
++ [j-hui/fidget.nvim](https://dotfyle.com/plugins/j-hui/fidget.nvim)
 ### lsp-installer
 
 + [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
-### marks
+### lua-colorscheme
 
-+ [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
-### motion
++ [ellisonleao/gruvbox.nvim](https://dotfyle.com/plugins/ellisonleao/gruvbox.nvim)
+### markdown-and-latex
 
-+ [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
++ [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
 ### nvim-dev
 
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
-### project
+### snippet
 
-+ [ahmedkhalf/project.nvim](https://dotfyle.com/plugins/ahmedkhalf/project.nvim)
++ [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 ### startup
 
-+ [nvimdev/dashboard-nvim](https://dotfyle.com/plugins/nvimdev/dashboard-nvim)
++ [echasnovski/mini.starter](https://dotfyle.com/plugins/echasnovski/mini.starter)
 ### statusline
 
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 ### syntax
 
-+ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 + [echasnovski/mini.surround](https://dotfyle.com/plugins/echasnovski/mini.surround)
++ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 ## Language Servers
 
 + bashls
