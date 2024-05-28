@@ -13,10 +13,10 @@ return {
 
 		telescope.setup({})
 		local builtin = require("telescope.builtin")
-
 		vim.keymap.set("n", "<C-b>", builtin.find_files, {})
 		vim.keymap.set("n", "<leader>r", builtin.oldfiles, {})
 		vim.keymap.set("n", "<leader>gr", builtin.live_grep, {})
 		vim.keymap.set("n", "<leader>fj", builtin.help_tags, {})
+		vim.keymap.set("n", "<leader>km", builtin.keymaps, {})
 	end,
 }
