@@ -39,11 +39,6 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("lualine").setup({
-				options = {
-					theme = "tokyonight",
-				},
-			})
 			require("tokyonight").setup({
 				style = "night",
 				transparent = true,
