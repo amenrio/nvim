@@ -20,7 +20,6 @@ return {
 			local lspconfig = require("lspconfig")
 
 			local servers = {
-				gopls = true,
 				bashls = true,
 				lua_ls = true,
 				jsonls = {
