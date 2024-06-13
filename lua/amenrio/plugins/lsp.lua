@@ -60,6 +60,7 @@ return {
 				"isort",
 				"jsonls",
 				"yamlls",
+				"beautysh",
 			}
 
 			vim.list_extend(ensure_installed, servers_to_install)
