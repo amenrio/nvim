@@ -36,6 +36,7 @@ augroup END
 vim.opt.updatetime = 50
 
 vim.opt.cursorline = true
+vim.opt.number = true
 
 vim.opt.colorcolumn = "100"
 vim.opt.textwidth = 100
