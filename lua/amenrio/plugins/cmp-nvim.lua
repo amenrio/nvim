@@ -6,7 +6,6 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
-		event = "VeryLazy",
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
 			"neovim/nvim-lspconfig",
@@ -33,12 +32,12 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					["<C-y>"] = cmp.mapping.confirm({ select = true }),
 				}),
-				sources = cmp.config.sources({
-					{ name = "nvim-lsp" },
-					{ name = "luasnip" },
-				}, {
-					{ name = "buffer" },
-				}),
+				sources = {
+					{ name = "path" },
+					{ name = "nvim_lsp", keyword_length = 1 },
+					{ name = "buffer", keyword_length = 3 },
+					{ name = "luasnip", keyword_length = 2 },
+				},
 			})
 			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 		end,

@@ -3,6 +3,7 @@ return {
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			"folke/neodev.nvim",
+			"hrsh7th/cmp-nvim-lsp",
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -10,15 +11,18 @@ return {
 			"b0o/SchemaStore.nvim",
 		},
 		config = function()
+			local lspconfig = require("lspconfig")
+
+			-- local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
+			-- lspconfig.pylsp.setup({
+			-- 	capabilities = lsp_capabilities,
+			-- })
 			require("neodev").setup({})
 
 			local capabilities = nil
 			if pcall(require, "cmp_nvim_lsp") then
 				capabilities = require("cmp_nvim_lsp").default_capabilities()
 			end
-
-			local lspconfig = require("lspconfig")
-
 			local servers = {
 				bashls = true,
 				lua_ls = true,
@@ -41,6 +45,7 @@ return {
 						},
 					},
 				},
+				pylsp = true,
 				pyright = true,
 			}
 			local servers_to_install = vim.tbl_filter(function(key)
@@ -76,7 +81,7 @@ return {
 
 				lspconfig[name].setup(config)
 			end
-
+			--
 			local disable_semantic_tokens = {
 				lua = true,
 			}
