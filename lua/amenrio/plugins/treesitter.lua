@@ -51,6 +51,7 @@ return {
 		indent = { enable = true },
 		ensure_installed = {
 			"bash",
+			"usd",
 			"c",
 			"cpp",
 			"diff",

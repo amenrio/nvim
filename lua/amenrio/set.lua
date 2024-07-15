@@ -32,7 +32,6 @@ autocmd!
 au TextYankPost * silent! lua vim.highlight.on_yank({higroup="MatchParen", timeout=100})
 augroup END
 ]])
-
 vim.opt.updatetime = 50
 
 vim.opt.cursorline = true
@@ -76,3 +75,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 vim.g.python3_host_prog = "~/.config/nvim/venv/bin/python"
+
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*.usda,*.usd",
+	callback = function()
+		local buf = vim.api.nvim_get_current_buf()
+		vim.api.nvim_buf_set_option(buf, "filetype", "usd")
+	end,
+})
