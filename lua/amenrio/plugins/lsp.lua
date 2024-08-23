@@ -45,8 +45,7 @@ return {
 						},
 					},
 				},
-				pylsp = true,
-				pyright = true,
+				ruff_lsp = true,
 			}
 			local servers_to_install = vim.tbl_filter(function(key)
 				local t = servers[key]
